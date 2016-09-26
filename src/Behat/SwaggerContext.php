@@ -215,6 +215,7 @@ class SwaggerContext extends MinkContext implements MinkAwareContext, SnippetAcc
      * @When I test swagger path :path
      * @When I test swagger path :path with operation :operation
      * @When I test swagger path :path with operation :operation and response :response
+     * @When I test swagger path :path with operation :operation with default
      *
      * @param string $path
      * @param string $operation
@@ -222,7 +223,7 @@ class SwaggerContext extends MinkContext implements MinkAwareContext, SnippetAcc
      * @throws LogicException
      * @throws InvalidArgumentException
      */
-    public function iTestTheSwaggerPath($path, $operation = 'get', $response = 200)
+    public function iTestTheSwaggerPath($path, $operation = 'get', $response = 'default')
     {
         $fullSchema = $this->getFullSchema();
         $paths = $this->getPropertyFromSchema($fullSchema, 'paths');

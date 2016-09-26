@@ -4,7 +4,7 @@
  *
  * @author Edward Pfremmer <epfremme@nerdery.com>
  */
-namespace Nerdery\SwaggerBundle\Command;
+namespace Epfremme\SwaggerBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
@@ -14,7 +14,7 @@ use Symfony\Component\Process\Process;
 /**
  * Class InstallMockApiCommand
  *
- * @package    SwaggerBundle\Nerdery
+ * @package    Epfremme\SwaggerBundle
  * @subpackage Command
  */
 class InstallMockApiCommand extends ContainerAwareCommand

@@ -4,7 +4,7 @@
  *
  * @author Edward Pfremmer <epfremme@nerdery.com>
  */
-namespace Nerdery\SwaggerBundle\Behat;
+namespace Epfremme\SwaggerBundle\Behat;
 
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Gherkin\Node\TableNode;
@@ -12,12 +12,13 @@ use Behat\Mink\Driver\BrowserKitDriver;
 use Behat\MinkExtension\Context\MinkAwareContext;
 use Behat\MinkExtension\Context\MinkContext;
 use Behat\Symfony2Extension\Context\KernelDictionary;
+use Epfremme\SwaggerBundle\Provider\SchemaProvider;
 use JsonSchema\Uri\UriResolver;
 use JsonSchema\Uri\UriRetriever;
 use JsonSchema\RefResolver;
 use JsonSchema\Validator;
+use Epfremme\SwaggerBundle\Response\JsonResponse;
 use LogicException;
-use Nerdery\SwaggerBundle\Response\JsonResponse;
 use PHPUnit_Framework_Assert;
 use stdClass;
 use Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
@@ -28,7 +29,7 @@ use Tebru\Realtype\Realtype;
  *
  * Defines contexts to test API responses
  *
- * @package    Nerdery\SwaggerBundle
+ * @package    Epfremme\SwaggerBundle
  * @subpackage Behat
  */
 class SwaggerContext extends MinkContext implements MinkAwareContext, SnippetAcceptingContext

@@ -4,18 +4,18 @@
  *
  * @author Edward Pfremmer <epfremme@nerdery.com>
  */
-namespace Nerdery\SwaggerBundle\Provider;
+namespace Epfremme\SwaggerBundle\Provider;
 
-use Nerdery\Swagger\Entity\Operation;
-use Nerdery\Swagger\Entity\Path;
-use Nerdery\Swagger\Entity\Swagger;
-use Nerdery\Swagger\Factory\SwaggerFactory;
+use Epfremme\Swagger\Entity\Operation;
+use Epfremme\Swagger\Entity\Path;
+use Epfremme\Swagger\Entity\Swagger;
+use Epfremme\Swagger\Factory\SwaggerFactory;
 use Symfony\Component\HttpKernel\KernelInterface;
 
 /**
  * Class SwaggerProvider
  *
- * @package     Nerdery\SwaggerBundle
+ * @package    Epfremme\SwaggerBundle
  * @subpackage Provider
  */
 class SwaggerProvider
@@ -72,7 +72,7 @@ class SwaggerProvider
      * @param string $path
      * @param string $operation
      * @param int $response
-     * @return \Nerdery\Swagger\Entity\Schemas\SchemaInterface|null
+     * @return \Epfremme\Swagger\Entity\Schemas\SchemaInterface|null
      */
     public function getResponse($path, $operation = 'get', $response = 200)
     {
@@ -87,7 +87,7 @@ class SwaggerProvider
 
     /**
      * @param string $name
-     * @return \Nerdery\Swagger\Entity\Schemas\SchemaInterface|null
+     * @return \Epfremme\Swagger\Entity\Schemas\SchemaInterface|null
      */
     public function getDefinition($name)
     {

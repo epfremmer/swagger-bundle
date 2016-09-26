@@ -4,7 +4,7 @@
  *
  * @author Edward Pfremmer <epfremme@nerdery.com>
  */
-namespace Nerdery\SwaggerBundle;
+namespace Epfremme\SwaggerBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
@@ -12,7 +12,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 /**
  * Class SwaggerBundle
  *
- * @package Nerdery\SwaggerBundle
+ * @package Epfremme\SwaggerBundle
  */
 class SwaggerBundle extends Bundle
 {

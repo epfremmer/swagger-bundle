@@ -2,7 +2,7 @@
   "name": "epfremme/swagger-bundle",
   "type": "symfony-bundle",
   "description": "Symfony 2 bundle for leveraging swagger library test/mock API contracts",
-  "license": "Nerdery",
+  "license": "MIT",
   "authors": [
     {
       "name": "Edward Pfremmer",

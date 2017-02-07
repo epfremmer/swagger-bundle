@@ -4,7 +4,7 @@
  *
  * @author Edward Pfremmer <epfremme@nerdery.com>
  */
-namespace Nerdery\SwaggerBundle\Behat;
+namespace Epfremme\SwaggerBundle\Behat;
 
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Gherkin\Node\TableNode;
@@ -12,12 +12,12 @@ use Behat\Mink\Driver\BrowserKitDriver;
 use Behat\MinkExtension\Context\MinkAwareContext;
 use Behat\MinkExtension\Context\MinkContext;
 use Behat\Symfony2Extension\Context\KernelDictionary;
+use Epfremme\SwaggerBundle\Response\JsonResponse;
 use JsonSchema\Uri\UriResolver;
 use JsonSchema\Uri\UriRetriever;
 use JsonSchema\RefResolver;
 use JsonSchema\Validator;
 use LogicException;
-use Nerdery\SwaggerBundle\Response\JsonResponse;
 use PHPUnit_Framework_Assert;
 use stdClass;
 use Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
@@ -28,7 +28,7 @@ use Tebru\Realtype\Realtype;
  *
  * Defines contexts to test API responses
  *
- * @package    Nerdery\SwaggerBundle
+ * @package    Epfremme\SwaggerBundle
  * @subpackage Behat
  */
 class SwaggerContext extends MinkContext implements MinkAwareContext, SnippetAcceptingContext
@@ -215,6 +215,7 @@ class SwaggerContext extends MinkContext implements MinkAwareContext, SnippetAcc
      * @When I test swagger path :path
      * @When I test swagger path :path with operation :operation
      * @When I test swagger path :path with operation :operation and response :response
+     * @When I test swagger path :path with operation :operation with default
      *
      * @param string $path
      * @param string $operation
@@ -222,7 +223,7 @@ class SwaggerContext extends MinkContext implements MinkAwareContext, SnippetAcc
      * @throws LogicException
      * @throws InvalidArgumentException
      */
-    public function iTestTheSwaggerPath($path, $operation = 'get', $response = 200)
+    public function iTestTheSwaggerPath($path, $operation = 'get', $response = 'default')
     {
         $fullSchema = $this->getFullSchema();
         $paths = $this->getPropertyFromSchema($fullSchema, 'paths');

@@ -6,10 +6,10 @@ parameters:
     swagger_bundle.mock_api: true
 
     # service classes
-    swagger_bundle.factory.swagger.class:   Nerdery\Swagger\Factory\SwaggerFactory
-    swagger_bundle.provider.swagger.class:  Nerdery\SwaggerBundle\Provider\SwaggerProvider
-    swagger_bundle.provider.schema.class:   Nerdery\SwaggerBundle\Provider\SchemaProvider
-    swagger_bundle.listener.mock_api.class: Nerdery\SwaggerBundle\EventListener\MockApiListener
+    swagger_bundle.factory.swagger.class:   Epfremme\Swagger\Factory\SwaggerFactory
+    swagger_bundle.provider.swagger.class:  Epfremme\SwaggerBundle\Provider\SwaggerProvider
+    swagger_bundle.provider.schema.class:   Epfremme\SwaggerBundle\Provider\SchemaProvider
+    swagger_bundle.listener.mock_api.class: Epfremme\SwaggerBundle\EventListener\MockApiListener
 
 services:
 

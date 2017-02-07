@@ -4,9 +4,9 @@
  *
  * @author Edward Pfremmer <epfremme@nerdery.com>
  */
-namespace Nerdery\SwaggerBundle\EventListener;
+namespace Epfremme\SwaggerBundle\EventListener;
 
-use Nerdery\SwaggerBundle\Command\InstallMockApiCommand;
+use Epfremme\SwaggerBundle\Command\InstallMockApiCommand;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\KernelInterface;
@@ -18,7 +18,7 @@ use Symfony\Component\Process\Process;
  * Listen for mock API requests and return mock API response data
  * based on the swagger documentation
  *
- * @package    SwaggerBundle\Nerdery
+ * @package    Epfremme\SwaggerBundle
  * @subpackage EventListener
  */
 class MockApiListener

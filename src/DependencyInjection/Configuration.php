@@ -4,7 +4,7 @@
  *
  * @author Edward Pfremmer <epfremme@nerdery.com>
  */
-namespace Nerdery\SwaggerBundle\DependencyInjection;
+namespace Epfremme\SwaggerBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -14,7 +14,7 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html#cookbook-bundles-extension-config-class}
  *
- * @package    SwaggerBundle\Nerdery
+ * @package    Epfremme\SwaggerBundle
  * @subpackage DependencyInjection
  */
 class Configuration implements ConfigurationInterface

@@ -4,9 +4,9 @@
  *
  * @author Edward Pfremmer <epfremme@nerdery.com>
  */
-namespace Nerdery\SwaggerBundle\Provider;
+namespace Epfremme\SwaggerBundle\Provider;
 
-use Nerdery\Swagger\Listener\SerializationSubscriber;
+use Epfremme\Swagger\Listener\SerializationSubscriber;
 use JMS\Serializer\EventDispatcher\EventDispatcher;
 use JMS\Serializer\SerializerBuilder;
 use JsonSchema\Uri\UriRetriever;
@@ -14,7 +14,7 @@ use JsonSchema\Uri\UriRetriever;
 /**
  * Class SchemaProvider
  *
- * @package    Nerdery\SwaggerBundle
+ * @package    Epfremme\SwaggerBundle
  * @subpackage Provider
  */
 class SchemaProvider extends UriRetriever
